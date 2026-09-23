@@ -1,0 +1,53 @@
+[
+  {
+    "word": {
+      "wordHead": "apple",
+      "wordId": "1",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "蘋果",
+            "pos": "n",
+            "sentence_example": "I eat an apple after lunch.\n我午飯後吃一個蘋果。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "borrow",
+      "wordId": "2",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "借用",
+            "pos": "v",
+            "sentence_example": "Can I borrow your pencil for a moment?\n我能借用一下你的鉛筆嗎？"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "look after",
+      "wordId": "3",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "照顧",
+            "pos": "phr v",
+            "sentence_example": "I look after my younger sister after school.\n我放學後照顧妹妹。"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "word": {
+      "wordHead": "apple",
+      "wordId": "1",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "사과",
+            "pos": "n",
+            "sentence_example": "I eat an apple after lunch.\n나는 점심을 먹고 사과를 하나 먹어요."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "borrow",
+      "wordId": "2",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "빌리다",
+            "pos": "v",
+            "sentence_example": "Can I borrow your pencil for a moment?\n연필을 잠깐 빌려도 될까요?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "look after",
+      "wordId": "3",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "돌보다",
+            "pos": "phr v",
+            "sentence_example": "I look after my younger sister after school.\n나는 방과 후에 여동생을 돌봐요."
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "word": {
+      "wordHead": "apple",
+      "wordId": "1",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "a round fruit with red or green skin",
+            "pos": "n",
+            "sentence_example": "I eat an apple after lunch.\nAfter lunch I have an apple."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "borrow",
+      "wordId": "2",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "to use something temporarily and then return it",
+            "pos": "v",
+            "sentence_example": "Can I borrow your pencil for a moment?\nCould I use your pencil for a moment?"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "look after",
+      "wordId": "3",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "to take care of someone or something",
+            "pos": "phr v",
+            "sentence_example": "I look after my younger sister after school.\nI care for my younger sister after school."
+          }
+        ]
+      }
+    }
+  }
+]

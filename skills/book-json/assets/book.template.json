@@ -1,0 +1,19 @@
+[
+  {
+    "word": {
+      "wordHead": "{{english_word_or_phrase}}",
+      "wordId": "1",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "{{definition_in_selected_language}}",
+            "pos": "{{part_of_speech}}",
+            "sentence_example": "{{english_example}}\n{{translation_in_selected_language}}"
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "word": {
+      "wordHead": "apple",
+      "wordId": "1",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "りんご",
+            "pos": "n",
+            "sentence_example": "I eat an apple after lunch.\n昼食後にりんごを一つ食べます。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "borrow",
+      "wordId": "2",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "借りる",
+            "pos": "v",
+            "sentence_example": "Can I borrow your pencil for a moment?\n鉛筆を少し借りてもいいですか。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "word": {
+      "wordHead": "look after",
+      "wordId": "3",
+      "content": {
+        "usphone": "",
+        "ukphone": "",
+        "trans": [
+          {
+            "tranCn": "世話をする",
+            "pos": "phr v",
+            "sentence_example": "I look after my younger sister after school.\n放課後は妹の世話をします。"
+          }
+        ]
+      }
+    }
+  }
+]

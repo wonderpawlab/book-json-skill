@@ -1,0 +1,4 @@
+interface:
+  display_name: "Book JSON"
+  short_description: "Create vocabulary books from words, PDFs, or photos"
+  default_prompt: "Use $book-json to create book.json from my vocabulary sources in my chosen definition language."

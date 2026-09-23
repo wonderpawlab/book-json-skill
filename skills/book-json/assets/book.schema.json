@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vocabulary book",
+  "description": "English vocabulary with definitions and example translations in one user-selected language. Run validate_book.py for cross-record constraints and file-level checks.",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 100000,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["word"],
+    "properties": {
+      "word": { "$ref": "#/$defs/word" }
+    }
+  },
+  "$defs": {
+    "trimmedString": {
+      "type": "string",
+      "pattern": "^(?:\\S(?:[\\s\\S]*\\S)?)?(?![\\s\\S])"
+    },
+    "phone": {
+      "allOf": [{ "$ref": "#/$defs/trimmedString" }],
+      "description": "Verified IPA without outer slashes or brackets, or an empty string when unknown. Separate verified variants with semicolon and space. The Python validator checks wrappers on each variant."
+    },
+    "word": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wordHead", "wordId", "content"],
+      "properties": {
+        "wordHead": {
+          "allOf": [{ "$ref": "#/$defs/trimmedString" }],
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "English word or intact phrase. Preserve meaningful spelling and case."
+        },
+        "wordId": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*(?![\\s\\S])",
+          "description": "Continuous string IDs from 1 through N; array position is checked by the Python validator."
+        },
+        "unit": {
+          "$ref": "#/$defs/trimmedString",
+          "description": "Optional source Unit/Lesson name or path. Omit without grouping; empty string is accepted for compatibility."
+        },
+        "content": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["usphone", "ukphone", "trans"],
+          "properties": {
+            "usphone": { "$ref": "#/$defs/phone" },
+            "ukphone": { "$ref": "#/$defs/phone" },
+            "trans": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/sense" }
+            }
+          }
+        }
+      }
+    },
+    "sense": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tranCn", "pos", "sentence_example"],
+      "properties": {
+        "tranCn": {
+          "type": "string",
+          "pattern": "\\S",
+          "description": "Definition in the selected language. Commas and semicolons in ASCII or full-width form expand into separate meanings."
+        },
+        "pos": {
+          "allOf": [{ "$ref": "#/$defs/trimmedString" }],
+          "not": { "pattern": "\\.$" },
+          "description": "English POS abbreviation without a trailing period, or empty when unknown. No closed enum."
+        },
+        "sentence_example": {
+          "type": "string",
+          "pattern": "^[^\\r\\n]*[^\\s\\r\\n][^\\r\\n]*\\n[^\\r\\n]*[^\\s\\r\\n][^\\r\\n]*(?![\\s\\S])",
+          "description": "Exactly two nonempty LF-separated lines: English example and its faithful translation in the selected language."
+        }
+      }
+    }
+  }
+}
